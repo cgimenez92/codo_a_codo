@@ -1,0 +1,19 @@
+.normal {
+    width: 250px;
+    border: 1px solid #000;
+    border-collapse: collapse; /* fusiona de forma automática los bordes de las celdas adyacentes*/
+  }
+
+  .hiden {
+    width: 250px;
+    border: 1px solid #000;
+  }
+
+
+.normal th, .normal td {
+    border: 1px solid #000;
+  }
+
+  .hiden th, .hiden td {
+    border: 1px solid #000;
+  }

@@ -1,0 +1,99 @@
+ul.menu {
+  background: #F4F4F4;
+  border: 1px solid #7C7C7C;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul.menu li {
+  float: left;
+  width: 20%;
+}
+ul.menu li a {
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #7C7C7C;
+  color: #333;
+  display: block;
+  padding: .3em;
+  text-decoration: none;
+}
+
+
+p > span { color: rgba(221, 0, 255, 0.526); } /*Ejemplo de herencia directa*/
+
+div > p { color: rgba(30, 255, 0, 0.196); } /*Ejemplo de selector descendente donde ignora el selector con herencia*/
+div p { color: rgb(255, 0, 0); } /*Ejemplo de selector descendente donde ignora el selector con herencia*/
+
+h1 + h2 { color: rgb(6, 197, 174) } /*Ejemplo de selectores adyacentes*/
+h2 { color: rgb(204, 204, 1); } /*Ejemplo de selectores adyacentes*/
+
+/*Para reducir al máximo el tamaño del archivo CSS para mejorar ligeramente el tiempo de carga de la página web se deben escribir las reglas en un mismo renglon*/
+
+.destacado {margin-left: 2em;} /*Ejemplo de Margin left con un stilo css*/
+
+.ejmargintblr{ margin-top: .5em; margin-bottom: .5em; margin-left: 1em; margin-right: .5em; } /*Asignacion de todos los valores*/
+.ejmargin4valores{ margin: .5em .5em .5em 1em; } /* Shortand Si se indican los cuatro valores, el orden de asignación es: margen superior, margen derecho, margen inferior y margen izquierdo.*/
+.ejmarginmas1valor{  margin: .5em; } /*Si solo se indica un valor, todos los márgenes tienen ese valor.*/
+
+
+/*Si no se asigna el estilo del borde, el borde no se muestra, por lo que siempre no se va a mostrar----- Siempre dar primero el estilo*/
+
+
+.ejpropiedadborder{border-style: solid;   
+    
+    border-top-width: 10px;
+    border-right-width: 1em;
+    border-bottom-width: thick;
+    border-left-width: thin;}
+
+
+/*Ejemplos de "Anchura" de bordes*/
+/*
+div {
+  border-top-width: 10px;
+  border-right-width: 1em;
+  border-bottom-width: thick;
+  border-left-width: thin;
+}
+*/
+
+/*Ejemplos de Color de bordes*/
+/*
+div {
+  border-top-color: #CC0000;
+  border-right-color: blue;
+  border-bottom-color: #00FF00;
+  border-left-color: #CCC;
+}
+*/
+
+/*Ejemplos de estilo de bordes*/
+/*
+div {
+  border-top-style: dashed;
+  border-right-style: double;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+*/
+
+/*Establecer todos los atributos de los bordes de forma simultánea
+
+h1 {border: Anchura Estilo Color;}
+
+*/
+p { border: 1px solid red; }
+body { background: antiquewhite url("C:/Users/u607158/Documents/programacion/codo_a_codo/com22085/wishAwhisky/HTML/img/scotland-wallpaper.jpg") repeat-x 50% 50% fixed }
+
+/* Color e imagen de fondo de la página mediante una propiedad shorthand 
+body { background: color url(ubicacion imagen) repeat position attachment; }
+*/
+
+/* Definicion de propiedades una por una 
+body{ 
+  background-color:antiquewhite; 
+  background-image: url("C:/Users/u607158/Documents/programacion/codo_a_codo/com22085/wishAwhisky/HTML/img/scotland-wallpaper.jpg");
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}*/

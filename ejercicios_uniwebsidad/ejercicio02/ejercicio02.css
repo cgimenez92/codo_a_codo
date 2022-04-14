@@ -1,0 +1,19 @@
+/*Se deben utilizar los colores: teal, red, blue, orange, purple, olive, fuchsia y green.*/
+h1#titulo{color: teal;}
+p strong{color: red;}
+span.destacado{color: orange;}
+h2#subtitulo{color: blue;}
+p a{color:red;}
+p a em{color:blue;}
+div#adicional p a{color: green;}
+span.especial{color: purple;}
+table caption{color: blue;}
+th.especial {color: orange;}
+table tbody tr td{color: green; }
+table tbody tr td strong{color:orange}
+table tfoot{color: red}
+tr th{color: red}
+div#adicional{color: olive;}
+span#especial{color: fuchsia;}
+
+/*Revisar cumple su funcion pero puede ser mas simple*/

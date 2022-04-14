@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--el formulario sea procesado por un programa, hemos de especificar la dirección del archivo que contiene dicho programa-->
+    <!--<form action="dirección del archivo" ...></form>-->
+
+    <!-- El contenido del formulario es enviado a la dirección de correo electrónico especificada-->
+    <form
+      action="mailto:cristian.a.gimenez@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <!--size define el tamaño visible de la caja de texto || maxlength indica el tamaño máximo real del texto que se puede escribir || value asignar un valor definido al campo en cuestión -->
+      Nombre
+      <input type="text" name="nombre" size="" maxlength="" value="Alberto" />
+      <br />
+
+      <!-- type="password" se desplegaran astericos en el textbox-->
+      Password <input type="password" name="contrasena" />
+      <br />
+
+      <!-- rows: define el número de líneas del campo de texto. cols: define el número de columnas del campo de texto.-->
+      <textarea name="comentario" rows="10" cols="40">
+        Escribe tu comentario...</textarea
+      >
+      <br />
+
+      <!--Menu desplegable-->
+      <select name="estacion">
+        <option>Primavera</option>
+        <option>Verano</option>
+        <!-- value="1" genera que la opcion sea primera en el select-->
+        <option value="1">Otoño</option>
+        <option>Invierno</option>
+      </select>
+      <br />
+
+      <!--Radio buttons-->
+      <input type="radio" name="estacion" value="1" />Primavera
+      <br />
+      <input type="radio" name="estacion" value="2" />Verano
+      <br />
+      <input type="radio" name="estacion" value="3" />Otoño
+      <br />
+      <input type="radio" name="estacion" value="4" />Invierno
+      <br />
+
+      <!--Check Box-->
+      <input type="checkbox" name="queso">Me Gusta el queso
+
+
+      <!--Botones-->
+      <input type="submit" value="Enviar">
+
+      <input type="reset" value="Borrar">
+
+      <input type=button value="Texto escrito en el botón">
+      
+    </form>
+  </body>
+</html>

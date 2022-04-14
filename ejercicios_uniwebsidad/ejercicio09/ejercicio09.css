@@ -1,0 +1,6 @@
+#galeria img{padding: .5em;
+            border: solid .1em rgb(192, 185, 185);
+            margin: 1em;
+            float: left;}
+
+#galeria { max-width: 650px; }

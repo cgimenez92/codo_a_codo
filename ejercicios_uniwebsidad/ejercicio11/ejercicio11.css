@@ -1,0 +1,19 @@
+table{border-color: #333; border-collapse: collapse; font-family: Arial, Helvetica, sans-serif;}
+
+table th.columna {background-image: url(fondo_gris.gif);}
+table tr th {background-color: #e6f3ff ;}
+
+tr.euus th{padding: .4em .5em .4em 1.3em; background:  #E6F3FF url("euro.png") no-repeat 3px;}
+tr.usyen th{padding: .4em .5em .4em 1.3em; background:  #E6F3FF url("dolar.png") no-repeat 3px;}
+tr.libus th{padding: .4em .5em .4em 1.3em; background:  #E6F3FF url("libra.png") no-repeat 3px;}
+tr.euyen th{padding: .4em .5em .4em 1.3em; background:  #E6F3FF url("yen.png") no-repeat 3px;}
+
+tr.euus td{background-color: #FFFFCC;}
+tr.libus td{background-color: #FFFFCC;}
+
+th, tr, td{ text-align: center;
+            border-color: #333;}
+
+table tr:hover {
+    background: #FFFF66;
+    }
