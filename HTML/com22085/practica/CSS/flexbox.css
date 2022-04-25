@@ -1,0 +1,14 @@
+#flex{ display: flex;}
+#inlineFlex{ display: inline-flex}
+
+.container {
+    background: steelblue;
+    display: flex;
+    flex-flow: column wrap; /*Short hand de flex direction y flex wrap*/
+    /*flex-direction: column;*/
+    place-content:   /* Equivalente a align-content: */ flex-start /* Equivalente a justify-content: */ flex-end; /* Short hand de align-content y justify-content */
+  }
+  
+  .item {
+    background: grey;
+  }
