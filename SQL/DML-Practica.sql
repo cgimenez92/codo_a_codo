@@ -80,7 +80,8 @@ SELECT * FROM world.country
 
 SELECT coun.Name, city.Name FROM world.country coun
 	LEFT JOIN world.city city 
-		ON coun.code = city.CountryCode AND coun.Capital = city.ID 
+		ON coun.code = city.CountryCode 
+			AND coun.Capital = city.ID 
 		WHERE coun.Continent = 'South America';
 
 SELECT coun.Code, city.Name, city.Population FROM world.country coun
@@ -88,5 +89,39 @@ SELECT coun.Code, city.Name, city.Population FROM world.country coun
 		ON coun.code = city.CountryCode
 		WHERE coun.LifeExpectancy >= 80;
         
-SELECT * FROM world.city;
+SELECT city.Name, coun.GovernmentForm FROM world.country coun
+	LEFT JOIN world.city city 
+		ON coun.Capital = city.ID 
+		WHERE coun.GovernmentForm = 'Federal Republic';
 
+SELECT coun.Name, lng.Language FROM world.country coun
+	LEFT JOIN world.countrylanguage lng
+		ON coun.code = lng.CountryCode
+		WHERE coun.Population BETWEEN 1000000 AND 3000000
+				AND lng.IsOfficial = 'T';
+                
+SELECT coun.Code, coun.LocalName, coun.Region FROM world.country coun
+	LEFT JOIN world.countrylanguage lng
+		ON coun.code = lng.CountryCode
+		WHERE lng.Language = 'Spanish';
+
+SELECT coun.Name, city.Name FROM world.country coun
+	LEFT JOIN world.city city 
+		ON coun.code = city.CountryCode 
+			AND coun.Capital = city.ID 
+		WHERE city.Population > (coun.Population/2);
+
+SELECT coun.Name, coun.SurfaceArea FROM world.country coun
+	LEFT JOIN world.city city 
+		ON coun.code = city.CountryCode 
+			AND coun.Capital = city.ID 
+		WHERE coun.Continent = 'Africa' 
+            AND city.Name = city.District;
+
+SELECT coun.Name, city.Name, coun.IndepYear FROM world.country coun
+	LEFT JOIN world.city city 
+		ON coun.code = city.CountryCode 
+			AND coun.Capital = city.ID 
+		WHERE coun.IndepYear IS NOT NULL
+            ORDER BY coun.IndepYear ASC LIMIT 20;
+            
